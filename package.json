@@ -1,0 +1,37 @@
+{
+  "name": "rasterly-mcp",
+  "version": "0.2.0",
+  "description": "MCP server for rasterly \u2014 let any AI agent read any URL as clean Markdown, or see it as a screenshot.",
+  "type": "module",
+  "bin": {
+    "rasterly-mcp": "index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agent",
+    "screenshot",
+    "web",
+    "markdown",
+    "reader",
+    "rasterly"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "mcpName": "io.github.jhonychain/rasterly-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonychain/rasterly-mcp.git"
+  },
+  "homepage": "https://rasterly.dev"
+}

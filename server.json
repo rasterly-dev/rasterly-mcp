@@ -1,0 +1,39 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.jhonychain/rasterly-mcp",
+  "description": "The web toolkit for AI agents: read any URL as clean Markdown, screenshot it, turn it into a PDF, or extract structured JSON. Backed by the rasterly rendering API.",
+  "title": "rasterly",
+  "websiteUrl": "https://rasterly.dev",
+  "repository": {
+    "url": "https://github.com/jhonychain/rasterly-mcp",
+    "source": "github"
+  },
+  "version": "0.2.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "rasterly-mcp",
+      "version": "0.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RASTERLY_API_KEY",
+          "description": "Your rasterly API key (get one free at https://rasterly.dev). Sent as the X-Api-Key header.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "RASTERLY_API_URL",
+          "description": "Override the rasterly API base URL to point at a self-hosted instance.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
