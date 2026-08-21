@@ -1,0 +1,31 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - rasterlyApiKey
+    properties:
+      rasterlyApiKey:
+        type: string
+        title: Rasterly API Key
+        description: Free key from https://rasterly.dev. Sent as the X-Api-Key header.
+      rasterlyApiUrl:
+        type: string
+        title: API base URL (optional)
+        description: Override the rasterly API base URL for a self-hosted instance. Leave blank to use the default.
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'rasterly-mcp'],
+      env: {
+        RASTERLY_API_KEY: config.rasterlyApiKey,
+        ...(config.rasterlyApiUrl ? { RASTERLY_API_URL: config.rasterlyApiUrl } : {})
+      }
+    })
+metadata:
+  name: rasterly
+  description: "MCP-native web API: read, screenshot, PDF, extract & crawl any URL — $0.90/1k"
+  categories:
+    - web-scraping
+    - browser
+    - data-extraction
