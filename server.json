@@ -1,20 +1,20 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.jhonychain/rasterly-mcp",
+  "name": "io.github.rasterly-dev/rasterly-mcp",
   "description": "Web toolkit for AI agents: read any URL as Markdown, screenshot, extract data, or crawl a site.",
   "title": "rasterly",
   "websiteUrl": "https://rasterly.dev",
   "repository": {
-    "url": "https://github.com/jhonychain/rasterly-mcp",
+    "url": "https://github.com/rasterly-dev/rasterly-mcp",
     "source": "github"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "rasterly-mcp",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "transport": {
         "type": "stdio"
       },
